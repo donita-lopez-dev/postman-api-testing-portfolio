@@ -11,6 +11,4 @@ Ce choix stratégique me permet de :
 Ce portfolio documente ma progression, des bases de l'API testing avec 
 Postman jusqu'à l'intégration de l'IA dans les stratégies de test.
 
-git add README.md
-git commit -m "Ajout de la section À propos - ma démarche vers le QA"
-git push
+
