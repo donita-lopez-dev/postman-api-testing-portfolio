@@ -1,20 +1,15 @@
 # API Testing review
+## 🎯 Pourquoi le QA ?
 
-Tests API réalisés avec Postman dans le cadre de ma formation QA.
+Après avoir obtenu mon AEC en programmation-analyste en 2025, j'ai choisi 
+de me spécialiser en assurance qualité plutôt qu'en développement pur. 
+Ce choix stratégique me permet de :
 
-## Structure du projet
+- Mettre à profit ma compréhension du code pour écrire des tests robustes
+- Entrer sur le marché du travail avec une expertise ciblée et recherchée
+- Construire une base solide avant de progresser vers l'automatisation avancée
 
-- **Collection** : contient les requêtes API (GET, POST) ainsi que leurs paramètres et scripts de test
-- **Environnement** : contient les variables réutilisables (ex. `base_url`) utilisées dans les requêtes de la collection
+Ce portfolio documente ma progression, des bases de l'API testing avec 
+Postman jusqu'à l'intégration de l'IA dans les stratégies de test.
 
-## Endpoints testés
-- GET/POST sur postman-echo.com
-- Validation status code, temps de réponse, structure JSON
 
-## Environnements
-- `dev.postman_environment.json` — variables de base (`base_url`)
-
-## Comment utiliser
-1. Importer `My-Collection.postman_collection.json` dans Postman
-2. Importer `dev.postman_environment.json` et le sélectionner comme environnement actif
-3. Lancer via Collection Runner
