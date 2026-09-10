@@ -1,15 +1,38 @@
-# API Testing review
-## 🎯 Pourquoi le QA ?
+# Ce que j'ai appris — Exercice API Testing avec Postman
 
-Après avoir obtenu mon AEC en programmation-analyste en 2025, j'ai choisi 
-de me spécialiser en assurance qualité plutôt qu'en développement pur. 
-Ce choix stratégique me permet de :
+## Exercice 2.1 — Envoi de données (POST)
 
-- Mettre à profit ma compréhension du code pour écrire des tests robustes
-- Entrer sur le marché du travail avec une expertise ciblée et recherchée
-- Construire une base solide avant de progresser vers l'automatisation avancée
+J'ai appris à envoyer des données structurées via le Body d'une requête POST, en utilisant le format JSON dans l'onglet **Body → raw → JSON**. Exemple utilisé :
 
-Ce portfolio documente ma progression, des bases de l'API testing avec 
-Postman jusqu'à l'intégration de l'IA dans les stratégies de test.
+```json
+{
+  "prenom": "Donita",
+  "objectif": "QA Analyst"
+}
+```
 
+**Ce que ça m'a permis de comprendre :**
+- Comment envoyer un payload JSON dans une requête HTTP
+- Comment postman-echo.com me renvoie mes propres données dans le champ `json` de la réponse, ce qui permet de vérifier que ce qui a été envoyé correspond à ce qui a été reçu
+- La différence entre les paramètres d'une requête GET (dans l'URL) et le contenu d'une requête POST (dans le Body)
 
+## Exercice 2.2 — Variables d'environnement
+
+J'ai créé un environnement Postman contenant une variable réutilisable :
+
+Puis j'ai remplacé l'URL codée en dur par `{{base_url}}/get`.
+
+**Compétence clé acquise : éviter le hardcoding**
+
+C'est une compétence essentielle en QA parce que :
+- Si l'URL de base change (ex: passage de dev à staging à prod), je n'ai qu'un seul endroit à modifier — la variable — plutôt que chaque requête individuellement
+- Ça rend mes collections de tests réutilisables dans différents environnements
+- C'est une pratique standard dans les vraies équipes QA en entreprise
+
+## Résumé
+
+| Concept | Compétence développée |
+|---|---|
+| Body → raw → JSON | Envoyer des données structurées dans une requête POST |
+| Comparer input/output | Valider qu'une API traite correctement les données reçues |
+| Variables d'environnement | Écrire des tests maintenables et réutilisables |
